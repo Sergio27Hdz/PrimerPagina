@@ -1,0 +1,58 @@
+body{
+	background-color: #246355;
+	background-attachment: fixed;
+	font-family: Arial;
+	display: flex;
+}
+h1{
+	font-family: Verdana;
+	font-size: 20px;
+	text-align: center;
+	font-size: 50px;
+}
+hr{
+	width: 90%;
+}
+h2, h3{
+	margin: 20px 20px 0 20px ;
+
+}
+p{
+	text-align: justify;
+	margin: 10px 30px 0 30px ;
+	text-indent: 1cm;
+
+}
+
+#imglef{
+	float: left;
+	height: 300px;
+	width: 300px;
+	margin: 0 10px 10px 10px;
+	padding: 2px;
+}
+#imglef1{
+	float: left;
+	height: 150px;
+	width: 200px;
+	margin: 0 10px 10px 10px;
+	padding: 2px;
+}
+#imgder{
+	float:right;
+	height: 300px;
+	width: 300px;
+	margin: 0 10px 10px 10px;
+	padding: 2px;
+}
+#imgcen{
+	height: 250px;
+	width: 250px;
+	margin: 10px 10px 10px 10px;
+	padding: 2px;
+}
+.link{
+	text-decoration: none;
+	color: gray;
+	font-size: 30px;
+}

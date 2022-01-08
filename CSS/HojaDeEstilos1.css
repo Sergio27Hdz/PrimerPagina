@@ -1,0 +1,143 @@
+body{
+	background-color: #246355;
+	background-attachment: fixed;
+	font-family: Arial;
+	display: flex;
+}
+h1{
+	font-family: Verdana;
+	font-size: 20px;
+	text-align: center;
+	font-size: 50px;
+}
+hr{
+	width: 90%;
+}
+p{
+	text-align: justify;
+	margin: 0 20px 0 20px ;
+	text-indent: 1cm;
+
+}
+.madre{
+	background-color: white;
+	height: 1700px;
+	width: 1400px;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -700px;
+	margin-top: -450px;
+	text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#img1{
+	float:left;
+	height: 200px;
+	width: 200px;
+	margin: 0 10px 10px 10px;
+	padding: 2px;
+}
+#img2{
+	float:right;
+	height: 150px;
+	width: 150px;
+	margin: 0 10px 10px 10px;
+	padding: 2px;
+}
+#img3{
+	float:left;
+	height: 150px;
+	width: 250px;
+	margin: 10px 10px 10px 10px;
+	padding: 2px;
+}
+#img4{
+	float:right;
+	height: 150px;
+	width: 250px;
+	margin: 10px 10px 10px 10px;
+	padding: 2px;
+}
+#img5{
+	float:left;
+	height: 150px;
+	width: 250px;
+	margin: 10px 10px 10px 10px;
+	padding: 2px;
+}
+#img6{
+	height: 300px;
+	width: 300px;
+	margin: 10px 10px 10px 10px;
+	padding: 2px;
+}
+#img7{
+	float: right;
+	height: 150px;
+	width: 150px;
+	margin: 0 10px 10px 0;
+	padding: 2px;
+}
+#img8{
+	float: left;
+	height: 90px;
+	width: 220px;
+	margin: 0 10px 10px 10px;
+	padding: 2px;
+}
+#img9{
+	height: 300px;
+	width: 500px;
+	margin: 0 10px 10px 10px;
+	padding: 2px;
+}
+#img10{
+	height: 300px;
+	width: 500px;
+	margin: 0 10px 10px 10px;
+	padding: 2px;
+}
+.link{
+	text-decoration: none;
+	color: gray;
+	font-size: 30px;
+}
+
+
+.Vuelta{
+	background-color: white;
+	height: 70px;
+	width: 250px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: -90%;
+	right: 75%;
+	margin-bottom: -25px;
+	margin-right: -100px;
+	border: 3px solid black;
+	
+}
+.Siguiente{
+	background-color: white;
+	height: 50px;
+	width: 250px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: -90%;
+	right: 25%;
+	margin-right: -100px;
+	border: 3px solid black;
+
+	
+}
+ .Vuelta:hover{
+	background-color: #d8d8d8;
+	border: 4px solid gray;
+}
+ .Siguiente:hover{
+	background-color: #d8d8d8;
+	border: 4px solid gray;
+}

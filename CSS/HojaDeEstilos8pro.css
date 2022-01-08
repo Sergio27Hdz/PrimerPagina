@@ -1,0 +1,72 @@
+.madre{
+	background-color: white;
+	height: 1500px;
+	width: 1100px;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -550px;
+	margin-top: -450px;
+	text-overflow: ellipsis;
+    overflow: hidden;
+}
+ .Vuelta{
+	background-color: white;
+	height: 50px;
+	width: 250px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: -70%;
+	right: 75%;
+	margin-bottom: -25px;
+	margin-right: -125px;
+	border: 3px solid black;
+	
+}
+ .Vuelta:hover{
+	background-color: #d8d8d8;
+	border: 4px solid gray;
+}
+ .Siguiente:hover{
+	background-color: #d8d8d8;
+	border: 4px solid gray;
+}
+ .Principal:hover{
+	background-color: #d8d8d8;
+	border: 4px solid gray;
+}
+.Siguiente{
+	background-color: white;
+	height: 50px;
+	width: 250px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: -70%;
+	right: 25%;
+	margin-right: -125px;
+	margin-bottom: -25px;
+	border: 3px solid black;
+}
+.Principal{
+	background-color: white;
+	height: 50px;
+	width: 250px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: -70%;
+	right: 50%;
+	margin-right: -125px;
+	margin-bottom: -25px;
+	border: 3px solid black;
+}
+h2{
+	text-align: center;
+	font-family: Courier New;
+}
+.imagen{
+	text-align: center;
+	width: 900px;
+	height: 500px;
+	border-radius: 20px;
+}

@@ -1,0 +1,106 @@
+body {
+	background: url(../imagenes/fondo.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: Arial;
+	display: flex;
+}
+h1{
+	font-family: Verdana;
+	font-size: 20px;
+	text-align: center;
+}
+
+.madre{
+	background-color: white;
+	height: 330px;
+	width: 500px;
+	border-radius: 20px;
+	position: absolute;
+	top: 6%;
+	left: 50%;
+	margin-left: -250px;
+
+}
+
+.hijo1{
+	height: 40px;
+	border: 2px solid #246355;
+	margin: 10px;
+	border-radius: 10px;
+	background-color: #ddd;
+}
+
+.foto{
+	height: 230px;
+	width: 200px; 
+	border: 2px solid #246355;
+	margin: 10px;
+	border-radius: 10px;
+	float: left;
+
+}
+.datosp {
+	height: 230px;
+	width: 250px;
+	border: 2px solid #246355;
+	margin: 10px;
+	border-radius: 10px;
+	float: left;
+
+}
+.p-formato{
+	text-align: right;
+	font-size:14px ;
+}
+#Perfil{
+  width: 180px;
+  height: 200px;
+  margin: 15px auto;
+  margin-left: 10px;
+}
+
+.personales{
+	background-color: #ddd;
+	height: 45px;
+	width: 250px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 6%;
+	left: 20%;
+	margin-left: -100px;
+	border: 3px solid #246355;
+	
+}
+
+.link{
+	text-decoration: none;
+	color: gray;
+	font-size: 30px;
+}
+
+
+.Menutareas{
+	background-color: #ddd;
+	height: 45px;
+	width: 250px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 6%;
+	right: 20%;
+	margin-left: -100px;
+	border: 3px solid #246355;
+	
+}
+ .personales:hover{
+	background-color: #246355;
+	opacity: 80%;
+}
+
+.link:hover{
+	color: white;
+}
+.Menutareas:hover{
+	background-color: #246355;
+	opacity: 80%;
+}

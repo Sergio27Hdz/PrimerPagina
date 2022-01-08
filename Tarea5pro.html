@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 5</title>
+	<link rel="stylesheet" type="text/css" href="CSS/HojaDeEstilospro.css">
+	<link rel="stylesheet" type="text/css" href="CSS/HojaDeEstilos5pro.css">
+</head>
+<body>
+	<div class="madre">
+		<h1>Scheme</h1><br><hr><br>
+		<img src="imagenes/Tareapro5Img1.jpg" alt="imagen de Scheme" id="imglef">
+		<h2>S&iacute;mbolos, Sintaxis, Esqueleto del programa</h2>
+		<p>Fue desarrollado por Guy L. Steele y Gerald Jay Sussman en la d&eacute;cada de los setenta e introducido en el mundo acad&eacute;mico a trav&eacute;s de una serie de artículos conocidos como los Lambda Papers de Sussman y Steele.</p>
+		<p>La filosof&iacute;a de Scheme es minimalista. Su objetivo no es acumular un gran n&uacute;mero de funcionalidades, sino evitar las debilidades y restricciones que hacen necesaria su adici&acute;n. As&iacue;, Scheme proporciona el m&iacute;nimo n&uacute;mero posible de nociones primitivas, construyendo todo lo demás a partir de un reducido n&uacute;mero de abstracciones.</p>
+		<p>Un s&iacute;mbolo es lo que en otros lenguajes se denomina identificador. En Scheme los s&iacute;mbolos e identificadores pueden contener caracteres internacionales (Unicode, UTF-8). El int&eacute;rprete DrScheme guarda los ficheros de texto en esa codificaci&oacute;n.</p>
+		<p>'hola</p>
+		<p>(symbol 'hola-que<>)</p>
+		<p>(symbol->string 'hola-que<>)</p>
+		<p>'mañana</p>
+		<p>'lápiz ; aunque sea posible, no vamos a usar acentos en los símbolos</p>
+		<p>; pero sí en los comentarios</p>
+		<p>(symbol? 'hola) ; #t</p>
+		<p>(symbol? "hola") ; #f</p>
+		<p>(symbol?  #f) ; #f</p>
+		<p>(equal? 'hola 'hola)</p>
+		<p>(equal? 'hola "hola")</p>
+		<img src="imagenes/Tareapro5Img2.jpg" alt="imagen de cadena" id="imglef">
+		<br><h3>Diferencia entre s&iacute;mbolos y cadenas </h3><br>
+		<p>un s&iacute;mbolo (identificador) es un objeto simple y una cadena es un objeto compuesto. El int&eacute;rprete de Scheme codifica un s&iacute;mbolo mediante un &uacute;nico n&uacute;mero, su valor hash. Otra diferencia bastante clara: un s&iacute;mbolo no puede contener un espacio, pero una cadena s&iacute;.</p>
+		<h3>Sintaxis</h3><br>
+		<p>Scheme posee una sintaxis reducida comparada a otros lenguajes. Utiliza la notaci&oacute;n prefija. Por ejemplo, si se desea realizar la suma 1+1, se debe programar la siguiente instrucci&oacute;n </p>
+		<p>(+1 1)</p>
+		<img src="imagenes/Tareapro5Img3.jpg" alt="imagen de sintaxis" id="imgder">
+		<p>Los par&eacute;ntesis son obligatorios, ya que separan las instrucciones que serán evaluadas por el int&eacute;rprete. Para realizar comentarios dentro del c&oacute;digo, se utiliza el ";", as&iacute; se marca que toda la l&iacute;nea ser&aacute; de comentario Ejemplo: </p>
+		<p>Esta l&iacute;nea es un comentario, y la orden de abajo es ejecutada </p>
+		<p>(+1 1)</p>
+		<p>Expresión -> átomo | lista</p>
+		<p>átomo -> número | string | identificador | carácter | boolean</p>
+		<p>lista -> '(' secuencia-expresión ')'</p>
+		<p>secuencia-expresión -> expresión secuencia - expresión | expresión</p>
+		<p>función -> ( nombre_función argumento1 argumento 2... argumento n).</p>
+		<br><h3>Variables</h3>
+		<p>Las variables son din&aacute;micamente tipadas. Para asociarlas a un valor concreto, podemos usar define, una expresi&oacute;n let, o alguna de sus variantes. Las variables asignadas en el primer nivel usando define est&aacute;n en &aacute;mbito global (es decir, son visibles en el resto de programa).</p>
+		<p>Scheme es un gran ejemplo de un estilo de dise&ntilde;o micro-n&uacute;cleo, ya que define un numero muy peque&ntilde;o de mecanismos b&aacute;sicos como parte de la especificaci&oacute;n principal del lenguaje/tiempo de ejecuci&oacute;n. Por ejemplo, solo define una estructura condicional en su base: la forma especial del if (if abc “yes” “no”). Asimismo, los operadores l&oacute;gicos, instrucciones de flujo, variables.</p>
+		<center>
+			<img src="imagenes/Tareapro5Img4.jpg" alt="imagen de variables" id="imgcen">
+			<img src="imagenes/Tareapro5Img5.jpg" alt="imagen de variables 2" id="imgcen">
+		</center>
+		
+		<h2>Aplicaciones para descargar</h2>
+		<p>Existen diferentes programas que permiten la programaci&oacute;n en este lenguaje de programaci&oacute;n.Una aplicaci&oacute;n que generalmente es utilizada es la de Drscheme debido a que otorga una facilidad al programador al ser de ellos. Tambi&eacute;n por su parte nos encontramos a Bigloo y a Jscheme el cual es un int&eacute;rprete  de scheme en Java. </p><br>
+		<center>
+			<img src="imagenes/Tareapro5Img6.jpg" alt="imagen de Bigloo" id="imgcen">
+			<img src="imagenes/Tareapro5Img7.jpg" alt="imagen de Jscheme" id="imgcen">
+		</center>
+		<img src="imagenes/Tareapro5Img8.jpg" alt="imagen de lenguaje funcional" id="imglef">
+		<h2>Paradigma</h2>
+		<p>Scheme es un lenguaje que pertenece a la categor&iacute;a de los lenguajes de programaci&oacute;n del tipo funcional (si bien impuro pues sus estructuras de datos no son inmutables) y un dialecto de Lisp que permite darle las caracteristicas que tiene.</p><br><br><br><br><br><br><br><br><br><br><br>
+		<h2>Ejemplo</h2>
+		<p>Escribir en scheme un programa que tome como entrada un n&uacute;mero que representa un a&ntilde;o (entrada). La funci&oacute;n debe calcular si el a&ntilde;o es bisiesto y retornar el s&iacute;mbolo: a&ntilde;o bisiesto. Si el a&ntilde;o no es bisiesto entonces la funci&oacute;n debe retornar el s&iacute;mbolo:    'a&ntilde;o_NO_bisiesto´</p>
+		<p>(define (añoB año)</p>
+		<p> (cond</p>
+		<p>    [(and (= (remainder año 4) 0) (or (not (= (remainder año 100) 0)) (= (remainder año 400) 0) )) 'año_bisiesto ]</p>
+		<p>		[else 'año_no_bisiesto ]</p>
+		<p>;prueba</p>
+		<p>(añoB 2004)</p>
+		<p>(añoB 2005)</p>
+		<center>
+			<img src="imagenes/Tareapro5Img9.jpg" alt="imagen de Fundador: Gerald Jay Sussman" id="imgcen">
+			<img src="imagenes/Tareapro5Img10.jpg" alt="imagen de Fundador: Guy L. Steele Jr." id="imgcen">
+		</center>
+	</div>
+	<div class="Vuelta">
+		<center><a href="Tarea4pro.html" class="link">Anterior</a></center>
+	</div>
+	<div class="Principal">
+		<center><a href="MenuTareas.html" class="link">Menu tareas</a></center>
+	</div>
+	
+	<div class="Siguiente">
+		<center><a href="Tarea6pro.html" class="link">Siguiente</a></center>	
+	</div>
+</body>
+</html>

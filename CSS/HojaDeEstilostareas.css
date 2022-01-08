@@ -1,0 +1,70 @@
+body{
+	background: url(../imagenes/fondo2.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: Arial;
+	display: flex;
+}
+h1{
+	font-family: Verdana;
+	font-size: 20px;
+	text-align: center;
+}
+
+.madre{
+	background-color: white;
+	height: 360px;
+	width: 500px;
+	border-radius: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -250px;
+	margin-top: -180px;
+}
+.cabeza{
+	height: 40px;
+	border: 2px solid #246355;
+	margin: 10px;
+	border-radius: 10px;
+	background-color: #ddd;
+}
+.tareas {
+	height: 50px;
+	width: 100px; 
+	border: 2px solid #246355;
+	margin: 10px;
+	border-radius: 10px;
+	float: left;
+}
+p{
+	text-align: center;
+	font-size: 18px;
+}
+.link{
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+}
+
+
+.vuelta{
+	background-color: white;
+	height: 50px;
+	width: 250px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 6%;
+	right: 50%;
+	margin-right: -100px;
+	border: 3px solid #246355;
+	
+}
+ .tareas:hover{
+	background-color: #246355;
+	opacity: 80%;
+}
+.vuelta:hover{
+	background-color: #246355;
+	opacity: 80%;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarea 6</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/HojaDeEstilospro.css">
+	<link rel="stylesheet" type="text/css" href="CSS/HojaDeEstilos6pro.css">
+</head>
+<body>
+	<div class="madre">
+		<h1>Haskell</h1><br><hr><br>
+		<img src="imagenes/Tareapro6Img1.jpg" alt="imagen de Haskell" id="imgder">
+		<img src="imagenes/Tareapro6Img8.jpg" alt="imagen de haskell" id="imglef">
+		<h2>S&iacute;mbolos, Sintaxis, Esqueleto del programa</h2>
+		<p>La sintaxis de este lenguaje es algo diferente debido a la forma de su escritura. Siendo que las cadenas de texto se escriben entre comillas dobles. Es posible escribir varias expresiones matemáticas directamente en ghci y obtener un resultado. Prelude es el prompt por defecto de GHCi.Las funciones se llaman colocando los argumentos directamente despu&eacute;s del nombre de la funci&oacute;n. No hay par&eacute;ntesis en la llamada a la funci&oacute;n.</p>
+		<p>Las funciones putStr y putStrLn imprimen cadenas en la terminal. La funci&oacute;n print imprime cualquier tipo de valor. (Si se hace print de una cadena, tendr&aacute; comillas). Si necesita m&uacute;ltiples acciones I/O en una expresi&oacute;n, puede usar un bloque do. Las acciones se separan con punto y coma. Si desea declarar el tipo de variable, solo es necesario utilizar “::” y escribir seguido a esto el tipo de dato a ingresar. En este lenguaje de prgramación no es necesario un esqueleto, por lo que simplemente se empieza a escribir el codigo automaticamente, pero respetando las reglas de sintaxis con las que cuenta que fueron planteadas anteriormente.</p>
+		<img src="imagenes/Tareapro6Img2.jpg" alt="imagen de aplicacion" id="imglef">
+		<h2>Aplicación para descargar</h2>
+		<p>En este lenguaje de programación se cienta con plataformas que ayudan a correr el programa que fue escrito en el archivo fuente, algunas plataformas son:</p>
+		<p>Glasgow Haskell Compiler (GHC). Siendo el mas utilizado por los programadores que utilizan este lenguaje de programación para sus trabajos.</p>
+		<p>Otra herramienta que puede ser utilizada es el Typing Haskell in Haskell.</p>
+		<h2>Paradigma</h2>
+		<p>Haskell es un lenguaje funcional (donde todo se hace con llamadas a funciones), estático, impl&iacute;citamente tipado (los tipos los revisa el compilador, pero no hace falta declararlos), perezoso (nada se hace hasta que es completamente necesario). Los lenguajes populares más parecidos son la familia ML.</p>
+		<center>
+			<img src="imagenes/Tareapro6Img3.jpg" alt="imagen de Lenguaje funcional" id="imgcen">
+			<img src="imagenes/Tareapro6Img4.jpg" alt="imagen de funciones" id="imgcen">
+		</center>
+		<h2>Ejemplo</h2>
+		<p>dadas dos listas de enteros de igual longitud, devuelve una lista de pares (min,max), donde min y max son el m&iacute;nimo y el m&aacute;ximo entre los elementos de ambas listas en la misma posici&oacute;n.</p>
+		<p>zipSort :: [Integer] -> [Integer] -> [(Integer,Integer)]</p>
+		<p>zipSort [] [] = []</p>
+		<p>zipSort (x:xs) (y:ys) | x>y = (x,y) : zipSort xs ys </p>
+		<p>| otherwise =  (y,x) : zipSort xs ys</p>
+		<center>
+			<img src="imagenes/Tareapro6Img6.jpg" alt="imagen de haskell de programacion" id="imgcen">
+			<img src="imagenes/Tareapro6Img5.jpg" alt="imagen de creador de haskell" id="imgcen">
+			<img src="imagenes/Tareapro6Img7.jpg" alt="imagen de haskell programacion 2" id="imgcen">
+		</center>
+		<center>
+			<img src="imagenes/Tareapro6Img9.jpg" alt="imagen de programacion funcional" id="imgcen">
+			<img src="imagenes/Tareapro6Img10.jpg" alt="imagen de haskell" id="imgcen">
+		</center>
+	</div>
+	<div class="Vuelta">
+		<center><a href="Tarea5pro.html" class="link">Anterior</a></center>
+	</div>
+	<div class="Principal">
+		<center><a href="MenuTareas.html" class="link">Menu tareas</a></center>
+	</div>
+	
+	<div class="Siguiente">
+		<center><a href="Tarea7pro.html" class="link">Siguiente</a></center>	
+	</div>
+
+</body>
+</html>

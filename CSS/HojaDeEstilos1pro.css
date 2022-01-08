@@ -1,0 +1,67 @@
+.madre{
+	background-color: white;
+	height: 1500px;
+	width: 1100px;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -550px;
+	margin-top: -450px;
+	text-overflow: ellipsis;
+    overflow: hidden;
+}
+#img1{
+	float: left;
+	height: 250px;
+	width: 400px;
+	margin: 0 10px 10px 10px;
+	padding: 2px;
+}
+#img2{
+	float: right;
+	height: 200px;
+	width: 200px;
+	margin: 0 10px 10px 10px;
+	padding: 2px;
+}
+.link{
+	text-decoration: none;
+	color: gray;
+	font-size: 30px;
+}
+
+
+.Vuelta{
+	background-color: white;
+	height: 50px;
+	width: 250px;
+	border-radius: 10px;
+	position: absolute;
+	top: 170%;
+	right: 75%;
+	margin-bottom: -25px;
+	margin-right: -125px;
+	border: 3px solid black;
+	
+}
+.Siguiente{
+	background-color: white;
+	height: 50px;
+	width: 250px;
+	border-radius: 10px;
+	position: absolute;
+	top: 170%;
+	right: 25%;
+	margin-right: -125px;
+	margin-bottom: -25px;
+	border: 3px solid black;
+}
+ .Siguiente:hover{
+	background-color: #d8d8d8;
+	border: 4px solid gray;
+}
+ .Vuelta:hover{
+	background-color: #d8d8d8;
+	border: 4px solid gray;
+}

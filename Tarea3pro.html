@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 3</title>
+	<link rel="stylesheet" type="text/css" href="CSS/HojaDeEstilospro.css">
+	<link rel="stylesheet" type="text/css" href="CSS/HojaDeEstilos3pro.css">
+</head>
+<body>
+	<div class="madre">
+		<h1>PROLOG</h1><br><hr><br>
+		<img src="imagenes/Tareapro3Img1.jpg" alt="imagen de Prolog" id="imglef">
+		<h2>Simbolos, Sintaxis,Esqueleto del programa</h2>
+		<p>El lenguaje de programaci&oacute;n ProLog se origin&oacute; debido a un trabajo implementado por Robert A. Kowalski que estudiaba en la Universidad de Edinburgo (Escocia, Reino Unido) y Alain Colmerauer perteneciente a la Universidad de Aix-Marseille (Francia) alrededor del año 1970. La investigaci&oacute;n de Kowalski en el &aacute;rea de deducci&oacute;n automatizada, llev&oacute; al desarrollo de uso formal de lógica como un lenguaje de programaci&oacute;n. Kowalski argument&oacute; la base te&oacute;rica y Colmerauer inici&oacute; la programaci&oacute;n de ProLog. </p>
+		<img src="imagenes/Tareapro3Img2.jpg" alt="imagen de comentarios" id="imgder">
+		<p>El Prolog descrito, tanto la sintaxis como los operadores b&aacute;sicos, siguen el estándar de Edimburgo [Clocksin y Mellish, 1987] as&iacute; como las especificaciones ISO [Covington, 1993] y [Deransart y otros, 1996]. </p>
+		<p>Las sentencias de Prolog son cl&aacute;usulas de Horn escritas con una sintaxis propia. El hecho de programar en Prolog consiste en dar al ordenador un Universo finito en forma de hechos y reglas, proporcionando los medios para realizar inferencias de un hecho a otro.</p>
+		<p>La forma de poder realizar comentarios en este lenguaje de programaci&oacute;n es:  <strong>"/*Comentario*/"</strong> sin las comillas dobles.</p>
+		<p>Los nombres de constantes y variables se construyen a partir de cadenas de caracteres. Prolog reconoce dos tipos de caracteres: </p>
+		<ul>
+			<img src="imagenes/Tareapro3Img8.jpg" alt="imagen de ASCII" id="imglef1">
+			<li><strong>Imprimibles:</strong> hacen que aparezca un determinado signo en la pantalla del ordenador. Se dividen en cuatro categor&iacute;as:
+			<ul>
+				<li><strong>letras may&uacute;sculas:</strong> A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z. </li>
+				<li><strong>letras minúsculas:</strong> a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z.  
+				</li>
+				<li><strong>dígitos num&eacute;ricos:</strong> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.</li>
+				<li><strong>signos:</strong> ! " # $ % & ' ( ) = - ^ | / \ { } [ ] _ @ + * ; : < > , . ? </li>
+			</ul> 
+			</li>
+			<li><strong>No imprimibles:</strong> no aparecen en forma de signo en la pantalla, pero realizan una determinada acci&oacute;n: nueva l&iacute;nea, retorno de carro. Cada car&aacute;cter tiene un entero entre 0 y 127 asociado a &eacute;l, este es su c&oacute;digo ASCII ("American Standard Code for Information Interchange").</li>
+		</ul>
+		
+		<h2>Aplicaci&oacute;n para descargar</h2>
+		<p>Existen diferentes editores de texto que son de ayuda para este lenguaje de programación, mas sin embargo los mas altamente recomendados son dos:</p>
+		<ol>
+			<li>CIAO Prolog.</li>
+			<li>SWI Prolog</li>
+		</ol>
+		<center><img src="imagenes/Tareapro3Img3.jpg" alt="imagen de CIAO ProLog" id="imgcen">
+		<img src="imagenes/Tareapro3Img4.jpg" alt="imagen de SWI ProLog" id="imgcen"></center>
+		<img src="imagenes/Tareapro3Img5.jpg" alt="imagen de logica" id="imgder">
+		<img src="imagenes/Tareapro3Img10.jpg" alt="imagen de creador 1" id="imglef">
+		<h2>Paradigma</h2>
+		<p>El paradigma al cual pertenece este lenguaje es el l&oacute;gico de predicados debido a que se les asigna el valor a las funciones para que estas sean comprobadas. Esto se puede ver claramente debido a lo anteriormente hablado en estas secciones.</p>
+		<h2>Ejemplo de programación</h2>
+		<p>Considerando este codigo, realice lo solicitado: </p>
+		<p>/* horoscopo(Signo,DiaIni,MesIni,DiaFin,MesFin)</p>
+		<p><- son del signo Signo los nacidos entre el DiaIni/MesIni y el DiaFin/MesFin */</p>
+		<p>horoscopo(aries,21,3,21,4). </p>
+		<p>horoscopo(tauro,21,4,21,5). </p>
+		<p>horoscopo(geminis,21,5,21,6). </p>
+		<p>horoscopo(cancer,21,6,21,7).</p>
+		<p>horoscopo(leo,21,7,21,8). </p>
+		<p>horoscopo(virgo,21,8,21,9). </p>
+		<p>horoscopo(libra,21,9,21,10).</p>
+		<p>horoscopo(escorpio,21,10,21,11). </p>
+		<p>horoscopo(sagitario,21,11,21,12). </p>
+		<p>horoscopo(capricornio,21,12,21,1). </p>
+		<p>horoscopo(acuario,21,1,21,2). </p>
+		<p>horoscopo(piscis,21,2,21,3).</p>
+		<p> /* signo(Dia,Mes,Signo) <- los nacidos el Dia/Mes pertenecen al signo Signo */ </p>
+		<p>signo(Dia,Mes,Signo) :- horoscopo(Signo,D1,M1,D2,M2), ( (Mes=M1,Dia>=D1) ; (Mes=M2,Dia='<'D2).)</p>
+		<p>?- signo(8,5,tauro). </p>
+		<p>?- signo(7,8,Signo).</p>
+		<p> ?- signo(7,X,Signo).</p>
+		<p> ?- signo(X,7,Signo).</p>
+		<center>
+			<img src="imagenes/Tareapro3Img6.jpg" alt="imagen de creador 1" id="imgcen">
+			<img src="imagenes/Tareapro3Img9.jpg" alt="imagen de programacion" id="imgcen">
+			<img src="imagenes/Tareapro3Img7.jpg" alt="imagen de creador 2" id="imgcen">
+		</center>
+	</div>
+	<div class="Vuelta">
+		<center><a href="Tarea2pro.html" class="link">Anterior</a></center>
+	</div>
+	<div class="Principal">
+		<center><a href="MenuTareas.html" class="link">Menu tareas</a></center>
+	</div>
+	
+	<div class="Siguiente">
+		<center><a href="Tarea4pro.html" class="link">Siguiente</a></center>	
+	</div>
+</body>
+</html>
